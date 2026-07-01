@@ -14,14 +14,14 @@ export default function NotFound() {
             to="/login"
             className="inline-flex items-center gap-2 font-medium text-blue-600 hover:text-blue-700 transition-colors"
           >
-            <ArrowLeft className="h-4 w-4" />
+            <ArrowLeft className="h-4 w-4" aria-hidden="true" />
             Back to login
           </Link>
         }
       >
         <div className="flex flex-col items-center justify-center py-6 text-center">
-          <div className="flex h-16 w-16 items-center justify-center rounded-full bg-red-50 text-red-600 mb-6">
-            <AlertCircle className="h-8 w-8" />
+          <div className="flex h-16 w-16 items-center justify-center rounded-full bg-slate-100 text-slate-500 mb-6">
+            <AlertCircle className="h-8 w-8" aria-hidden="true" />
           </div>
           
           <p className="text-slate-600 text-sm mb-4">
