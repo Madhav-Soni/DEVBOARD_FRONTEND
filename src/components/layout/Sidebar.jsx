@@ -1,11 +1,11 @@
 import { LayoutGrid, Home, FolderKanban, Settings, LogOut } from "lucide-react";
 import { NavLink, useNavigate } from "react-router-dom";
-import { ROUTES } from "../constants/routes";
+import { ROUTES } from "../../constants/routes";
 
 const NAV_ITEMS = [
   { label: "Dashboard", icon: Home, to: ROUTES.DASHBOARD },
-  { label: "Projects", icon: FolderKanban, to: "/projects" },
-  { label: "Settings", icon: Settings, to: "/settings" },
+  { label: "Projects", icon: FolderKanban, to: ROUTES.PROJECTS },
+  { label: "Settings", icon: Settings, to: ROUTES.SETTINGS },
 ];
 
 /**

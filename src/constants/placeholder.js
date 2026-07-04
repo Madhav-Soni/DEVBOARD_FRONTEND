@@ -13,6 +13,7 @@ export const PLACEHOLDER_PROJECTS = [
     tasksTotal: 24,
     tasksDone: 9,
     updatedAt: "2025-06-28",
+    dueDate: "2025-07-15",
     color: "bg-blue-500",
     initials: "AG",
   },
@@ -24,6 +25,7 @@ export const PLACEHOLDER_PROJECTS = [
     tasksTotal: 18,
     tasksDone: 3,
     updatedAt: "2025-06-25",
+    dueDate: "2025-08-01",
     color: "bg-violet-500",
     initials: "DS",
   },
@@ -35,10 +37,17 @@ export const PLACEHOLDER_PROJECTS = [
     tasksTotal: 12,
     tasksDone: 11,
     updatedAt: "2025-06-20",
+    dueDate: "2025-07-10",
     color: "bg-emerald-500",
     initials: "MA",
   },
 ];
+
+/** Placeholder stats that aren't derivable from project list. */
+export const PLACEHOLDER_STATS = {
+  tasksDueToday: 3,
+  teamMembers: 8,
+};
 
 /** Placeholder user shown in the welcome card and top navbar. */
 export const PLACEHOLDER_USER = {

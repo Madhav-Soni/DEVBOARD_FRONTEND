@@ -1,5 +1,5 @@
 import { Search, Bell } from "lucide-react";
-import { PLACEHOLDER_USER } from "../constants/placeholder";
+import { PLACEHOLDER_USER } from "../../constants/placeholder";
 
 /**
  * Top navigation bar rendered above the main content area.

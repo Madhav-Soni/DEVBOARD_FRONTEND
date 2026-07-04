@@ -19,6 +19,7 @@ export default function Button({
   disabled = false,
   onClick,
   className = "",
+  fullWidth = true,
   ...rest
 }) {
   return (
@@ -27,7 +28,7 @@ export default function Button({
       onClick={onClick}
       disabled={disabled || isLoading}
       aria-busy={isLoading}
-      className={`inline-flex w-full items-center justify-center gap-2 rounded-lg px-4 py-2.5
+      className={`inline-flex ${fullWidth ? "w-full" : ""} items-center justify-center gap-2 rounded-lg px-4 py-2.5
         text-sm font-medium transition-colors duration-150 focus-visible:outline-none
         focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2
         disabled:cursor-not-allowed ${VARIANT_STYLES[variant]} ${className}`}

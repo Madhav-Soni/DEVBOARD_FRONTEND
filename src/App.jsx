@@ -2,6 +2,8 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Dashboard from "./pages/Dashboard";
+import Projects from "./pages/Projects";
 import NotFound from "./pages/NotFound";
 import { ROUTES } from "./constants/routes";
 
@@ -15,6 +17,8 @@ export default function App() {
           <Route path="/" element={<Navigate to={ROUTES.LOGIN} replace />} />
           <Route path={ROUTES.LOGIN} element={<Login />} />
           <Route path={ROUTES.SIGNUP} element={<Signup />} />
+          <Route path={ROUTES.DASHBOARD} element={<Dashboard />} />
+          <Route path={ROUTES.PROJECTS} element={<Projects />} />
           {/* Fallback: unknown routes render the 404 page */}
           <Route path="*" element={<NotFound />} />
         </Routes>
